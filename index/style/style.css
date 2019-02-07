@@ -40,26 +40,35 @@ header h1 {
   font-size: 3rem;
 }
 
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto;
+  grid-column-gap: 32px;
+}
+
+.card {
+  background-color: #fff;
+  grid-column: span 2;
+}
+
 .bars {
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 0;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto;
+  grid-column-gap: 32px;
 }
 
 .bars .bar {
+  grid-column: span 1;
   height: 100%;
-  width: 1px;
-  background-color: rgba(221, 221, 221, 0.4);
+  border-left: 1px solid rgba(221, 221, 221, 0.4);
+  border-right: 1px solid rgba(221, 221, 221, 0.4);
 }
 /*# sourceMappingURL=style.css.map */

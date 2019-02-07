@@ -1,6 +1,7 @@
 @import "_vars"
 @import "_reset"
 @import "modules/_header"
+@import "modules/_card"
 
 // bars
 .bars
@@ -8,13 +9,9 @@
   width: 100%
   position: fixed
   z-index: 0
-  top: 0
-  left: 0
-  display: flex
-  align-items: center
-  justify-content: space-around
+  +grid()
   .bar
-    // position: absolute
+    grid-column: span 1
     height: 100%
-    width: 1px
-    background-color: rgba(#ddd, 0.4)
+    border-left: 1px solid rgba(#ddd, 0.4)
+    border-right: 1px solid rgba(#ddd, 0.4)
