@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+::-moz-selection {
+  background-color: #bfffe2;
+}
+
+::selection {
+  background-color: #bfffe2;
+}
+
+body {
+  background-color: #f4fffa;
+}
+/*# sourceMappingURL=style.css.map */
