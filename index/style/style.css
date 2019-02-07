@@ -54,6 +54,29 @@ header h1 {
 .card {
   background-color: #fff;
   grid-column: span 2;
+  -webkit-box-shadow: 0 8px 32px -12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 32px -12px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.2);
+}
+
+.card div {
+  padding: 8px 16px;
+}
+
+.card div h2 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.card div p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
 }
 
 .fixed {
