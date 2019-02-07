@@ -4,11 +4,13 @@
 @import "modules/_card"
 
 // bars
+.fixed
+  position: fixed
+  z-index: -1
+  width: 100%
+  height: 100vh
 .bars
   height: 100vh
-  width: 100%
-  position: fixed
-  z-index: 0
   +grid()
   .bar
     grid-column: span 1
