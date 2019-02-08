@@ -10,6 +10,7 @@
 body {
   height: 100vh;
   width: 100%;
+  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,13 +34,40 @@ body {
   color: rgba(0, 0, 0, 0.85);
 }
 
+.slides {
+  width: 100%;
+  white-space: nowrap;
+}
+
 .slide {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
   position: relative;
   height: 360px;
   width: 540px;
 }
 
-.slide h1 {
+.container .card, .container .img {
+  -webkit-box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
+          box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
+  border-radius: 8px;
+  position: absolute;
+  width: 432px;
+  height: 288px;
+}
+
+.container h1 {
   font-family: "Kaushan Script", cursive;
   font-size: 7rem;
   white-space: nowrap;
@@ -50,36 +78,30 @@ body {
   left: -7rem;
 }
 
-.slide .card {
+.container .card {
   background-color: #fff;
-  width: 432px;
-  height: 288px;
-  overflow: hidden;
   position: absolute;
   z-index: 1;
-  -webkit-box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
-          box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
   bottom: 0;
   right: 0;
   padding: 1rem;
 }
 
-.slide .card p {
-  text-overflow: ellipsis;
+.container .card p {
   line-height: 1.8rem;
   font-size: 1.1rem;
+  white-space: normal;
 }
 
-.slide .img {
+.container .img {
   background-image: url("https://via.placeholder.com/480x320");
-  width: 432px;
-  height: 288px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
   z-index: -1;
-  -webkit-box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
-          box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
+}
+
+.slide:nth-child(1) .img {
+  background-image: url(https://images.unsplash.com/photo-1548600916-dc8492f8e845?fit=crop&w=540&h=360);
 }
 
 nav {
@@ -97,12 +119,12 @@ nav button {
   transition: 0.3s all ease-in-out;
 }
 
-nav .right-arrow:hover {
+nav #right-nav:hover {
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
 }
 
-nav .left-arrow:hover {
+nav #left-nav:hover {
   -webkit-transform: translateX(-4px);
           transform: translateX(-4px);
 }
