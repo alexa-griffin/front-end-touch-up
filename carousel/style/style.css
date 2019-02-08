@@ -100,6 +100,8 @@ body {
   bottom: 0;
   right: 0;
   padding: 1rem;
+  width: 324px;
+  height: 216px;
 }
 
 .container .card p {
@@ -117,6 +119,14 @@ body {
 
 .slide:nth-child(1) .img {
   background-image: url("https://images.unsplash.com/photo-1548600916-dc8492f8e845?fit=crop&w=540&h=360");
+}
+
+.slide:nth-child(2) .img {
+  background-image: url("https://images.unsplash.com/photo-1549291748-630fcc1611bd?fit=crop&w=540&h=360");
+}
+
+.slide:nth-child(3) .img {
+  background-image: url("https://images.unsplash.com/photo-1476293602671-beea27e1e702?fit=crop&w=540&h=360");
 }
 
 nav {
