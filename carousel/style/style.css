@@ -37,6 +37,19 @@ body {
 .slides {
   width: 100%;
   white-space: nowrap;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+}
+
+.slides::-webkit-scrollbar {
+  background-color: transparent;
+  height: 2px;
 }
 
 .slide {
@@ -50,6 +63,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .container {
@@ -101,13 +116,13 @@ body {
 }
 
 .slide:nth-child(1) .img {
-  background-image: url(https://images.unsplash.com/photo-1548600916-dc8492f8e845?fit=crop&w=540&h=360);
+  background-image: url("https://images.unsplash.com/photo-1548600916-dc8492f8e845?fit=crop&w=540&h=360");
 }
 
 nav {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
 }
 
 nav button {
