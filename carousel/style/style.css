@@ -81,4 +81,29 @@ body {
   -webkit-box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
           box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
 }
+
+nav {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+nav button {
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+nav .right-arrow:hover {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
+}
+
+nav .left-arrow:hover {
+  -webkit-transform: translateX(-4px);
+          transform: translateX(-4px);
+}
 /*# sourceMappingURL=style.css.map */
