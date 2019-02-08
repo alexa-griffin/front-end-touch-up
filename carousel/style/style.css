@@ -23,6 +23,16 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+::-moz-selection {
+  background-color: rgba(127, 253, 255, 0.3);
+  color: rgba(0, 0, 0, 0.85);
+}
+
+::selection {
+  background-color: rgba(127, 253, 255, 0.3);
+  color: rgba(0, 0, 0, 0.85);
+}
+
 .slide {
   position: relative;
   height: 448px;
