@@ -1,0 +1,26 @@
+$width: 480px
+$height: 320px
+  
+.slide
+  position: relative
+  height: $height * 2
+  width: $width * 2
+  h1
+    font-family: $script
+    font-size: 8rem
+    position: absolute
+    z-index: 0
+  .card
+    background-color: #fff
+    height: $height * (2 / 3)
+    width: $width * (2 / 3)
+    position: absolute
+    z-index: 1
+  .img
+    background-image: url("https://via.placeholder.com/480x320")
+    width: 480px
+    height: 320px
+    background-repeat: no-repeat
+    background-size: cover
+    position: absolute
+    z-index: -1

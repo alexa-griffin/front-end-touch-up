@@ -20,5 +20,37 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #fafafa;
+  font-family: "Open Sans", sans-serif;
+}
+
+.slide {
+  position: relative;
+  height: 640px;
+  width: 960px;
+}
+
+.slide h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 8rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.slide .card {
+  background-color: #fff;
+  height: 213.33333px;
+  width: 320px;
+  position: absolute;
+  z-index: 1;
+}
+
+.slide .img {
+  background-image: url("https://via.placeholder.com/480x320");
+  width: 480px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
