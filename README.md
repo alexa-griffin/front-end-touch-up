@@ -22,3 +22,16 @@ I thought about using no tools at all: plain notepad, html, css, and js. Then I 
 
 - [SASS](https://sass-lang.com/)
 - [Visual studio code](https://code.visualstudio.com/)
+
+
+## Resources used
+
+### Fonts
+
+- Crimson Text
+- Source Sans Pro
+- Kaushan Script
+- Open Sans
+
+### Assets
+- [Feather Icons](https://github.com/feathericons/feather)
