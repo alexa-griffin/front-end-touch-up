@@ -16,7 +16,6 @@ slideConainer.addEventListener("scroll", function(e) {
   for(var i = 0; i < slides.length; i++) {
     var slide = slides[i].childNodes[1] // container child node
     var scalar = e.currentTarget.scrollLeft - slides[i].offsetLeft
-    // scalar = scalar > 0 ? scalar : 0
     for(var j = 0; j < slide.childNodes.length; j++) {
       var el = slide.childNodes[j]
       if(el.nodeType !== 3) {
