@@ -35,41 +35,42 @@ body {
 
 .slide {
   position: relative;
-  height: 448px;
-  width: 672px;
+  height: 336px;
+  width: 448px;
 }
 
 .slide h1 {
   font-family: "Kaushan Script", cursive;
-  font-size: 8rem;
+  font-size: 7rem;
+  white-space: nowrap;
   position: absolute;
   z-index: 0;
   color: #7ffdff;
-  top: -8rem;
-  left: -8rem;
+  top: -7rem;
+  left: -7rem;
 }
 
 .slide .card {
   background-color: #fff;
-  height: 213.33333px;
-  width: 320px;
+  width: 213.33333px;
+  height: 160px;
   position: absolute;
   z-index: 1;
-  -webkit-box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.1);
-          box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.1);
+  -webkit-box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
+          box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
   bottom: 0;
   right: 0;
 }
 
 .slide .img {
   background-image: url("https://via.placeholder.com/480x320");
-  width: 480px;
-  height: 320px;
+  width: 320px;
+  height: 240px;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   z-index: -1;
-  -webkit-box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.1);
-          box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.1);
+  -webkit-box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
+          box-shadow: 0 8px 24px 8px rgba(127, 253, 255, 0.15);
 }
 /*# sourceMappingURL=style.css.map */

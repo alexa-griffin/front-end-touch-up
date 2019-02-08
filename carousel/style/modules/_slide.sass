@@ -1,5 +1,5 @@
-$width: 480px
-$height: 320px
+$width: 320px
+$height: 240px
   
 .slide
   position: relative
@@ -7,27 +7,28 @@ $height: 320px
   width: $width * (1.4)
   h1
     font-family: $script
-    font-size: 8rem
+    font-size: 7rem
+    white-space: nowrap
     position: absolute
     z-index: 0
     color: $main
-    top: -8rem
-    left: -8rem
+    top: -7rem
+    left: -7rem
   .card
     background-color: #fff
-    height: $height * (2 / 3)
     width: $width * (2 / 3)
+    height: $height * (2 / 3)
     position: absolute
     z-index: 1
-    box-shadow: 0 8px 24px 8px rgba($main, 0.1)
+    box-shadow: 0 8px 24px 8px rgba($main, 0.15)
     bottom: 0
     right: 0
   .img
     background-image: url("https://via.placeholder.com/480x320")
-    width: 480px
-    height: 320px
+    width: $width
+    height: $height
     background-repeat: no-repeat
     background-size: cover
     position: absolute
     z-index: -1
-    box-shadow: 0 8px 24px 8px rgba($main, 0.1)
+    box-shadow: 0 8px 24px 8px rgba($main, 0.15)
