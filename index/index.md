@@ -4,4 +4,7 @@ This page serves as a landing point for all of the other pages I will end up mak
 
 
 ## What I learned
-I learned the basics of css grid and some color theory.
+
+- basics of css grid
+- new but important css units
+- color theory
