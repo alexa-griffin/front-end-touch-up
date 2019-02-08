@@ -7,8 +7,8 @@ var rightNav = document.getElementById("right-nav")
 var activeSlide = 0
 
 var scalars = {
-  img: 0.2,
-  card: 0.1,
+  img: 0.3,
+  card: 0.2,
 }
 
 slideConainer.addEventListener("scroll", function(e) {
