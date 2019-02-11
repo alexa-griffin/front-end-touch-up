@@ -1,6 +1,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
+  border: none;
 }
 
 body {
@@ -9,6 +11,11 @@ body {
   padding: 0;
   color: #3E3947;
   font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .container {
@@ -23,6 +30,7 @@ body {
 }
 
 header {
+  font-size: 1.1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -31,6 +39,7 @@ header {
   max-width: 1180px;
   width: 95%;
   margin: 0 auto;
+  margin-top: 16px;
 }
 
 header .logo {
@@ -38,10 +47,14 @@ header .logo {
   grid-column: 2;
 }
 
+header .logo span {
+  font-weight: 900;
+}
+
 header nav {
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 5;
-  grid-column: 8 / 13;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / 13;
 }
 
 header nav ul {
@@ -51,5 +64,15 @@ header nav ul {
 
 header nav ul li {
   display: inline-block;
+  margin-right: 16px;
+}
+
+header nav button {
+  background-color: #9274CD;
+  font-size: inherit;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 100px;
 }
 /*# sourceMappingURL=style.css.map */
