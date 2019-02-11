@@ -32,6 +32,7 @@ I thought about using no tools at all: plain notepad, html, css, and js. Then I 
 - Source Sans Pro
 - Kaushan Script
 - Open Sans
+- Lato
 
 ### Assets
 - [Feather Icons](https://github.com/feathericons/feather)
