@@ -1,0 +1,30 @@
+.hero
+  +grid()
+  grid-template-rows: auto auto 50px
+  canvas
+    height: 100%
+    width: 100%
+    grid-column: 7 / 13
+
+  .cta
+    grid-column: 1 / 7
+    h1
+      font-size: 5rem
+    p
+      grid-column: 8 / 12
+      font-size: 1.1rem
+      line-height: 1.6rem
+      grid-row: 2 / 3
+    button
+      background: $blue
+      font-size: inherit
+      padding: 8px 16px
+      cursor: pointer
+      color: rgba(#fff, 0.9)
+      border-radius: 100px
+      box-shadow: 0 8px 12px -8px rgba(#000, 0.2)
+      transition: 0.2s all ease-in-out
+      font-size: 1.1rem
+      &:hover
+        box-shadow: 0 8px 12px -6px rgba(#000, 0.2)
+        background-color: $purple
