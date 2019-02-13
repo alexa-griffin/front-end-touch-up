@@ -2,3 +2,39 @@ body
   margin: 0
   padding: 0
   font-family: "Comic Sans MS"
+
+p, h1, h2, h3, h4, h5, h6
+  &:hover
+    font-family: "Wingdings"
+    animation: rainbow 1s infinite linear
+
+@keyframes spin
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(360deg)
+
+
+@keyframes rainbow
+  0%
+    color: red
+  10%
+    color: orange
+  20%
+    color: yellow
+  30%
+    color: lime
+  40%
+    color: green
+  50%
+    color: turquoise
+  60%
+    color: cyan
+  70%
+    color: blue
+  80%
+    color: purple
+  90%
+    color: pink
+  100%
+    color: red
